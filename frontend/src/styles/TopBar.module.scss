@@ -1,0 +1,23 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: white;
+  height: 100px;
+}
+
+.leftSideWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.centerWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-height: 50px;
+}

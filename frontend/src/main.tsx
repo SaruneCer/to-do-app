@@ -8,7 +8,7 @@ import Register from "./pages/Register";
 import UserInfo from "./pages/UserInfo";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import "./index.css";
+import "./styles/global.scss";
 
 const router = createBrowserRouter([
   {

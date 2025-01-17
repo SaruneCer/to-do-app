@@ -1,0 +1,35 @@
+.searchInputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 36px;
+}
+
+.searchInput {
+  width: 100%;
+  padding-right: 2rem;
+  padding-left: 0.5rem;
+  height: 36px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f8f8f8;
+}
+
+.iconWrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  height: 100%;
+  width: 36px;
+  background-color: #f47068;
+  border-radius: 6px;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
