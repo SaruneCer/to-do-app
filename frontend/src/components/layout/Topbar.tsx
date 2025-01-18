@@ -1,8 +1,8 @@
-import Logo from "../assets/logo.png";
-import { ROUTES } from "../router/pageRoutes";
+import Logo from "../../assets/logo.png";
+import { ROUTES } from "../../router/pageRoutes";
 import { Link } from "react-router-dom";
-import SearchInput from "./common/SearchInput";
-import styles from "../styles/Topbar.module.scss";
+import SearchInput from "../common/SearchInput";
+import styles from "../../styles/Topbar.module.scss";
 
 const Topbar = () => {
   return (

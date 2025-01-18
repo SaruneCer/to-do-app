@@ -1,13 +1,14 @@
 import React from "react";
+import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
-import { ROUTES } from "./router/pageRoutes.js";
-import Error from "./pages/Error";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import UserInfo from "./pages/UserInfo";
-import ReactDOM from "react-dom/client";
+import Error from "./pages/Error";
 import App from "./App.jsx";
+import AuthLayout from "./components/layout/AuthLayout";
+import RootLayout from "./components/layout/RootLayout";
 import "./styles/global.scss";
 
 const router = createBrowserRouter([
@@ -17,20 +18,30 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        path: ROUTES.HOME,
-        element: <Home />,
+        element: <RootLayout />, 
+        children: [
+          {
+            path: "/",
+            element: <Home />,
+          },
+          {
+            path: "/user-info",
+            element: <UserInfo />,
+          },
+        ],
       },
       {
-        path: ROUTES.LOGIN,
-        element: <Login />,
-      },
-      {
-        path: ROUTES.USER_INFO,
-        element: <UserInfo />,
-      },
-      {
-        path: ROUTES.REGISTER,
-        element: <Register />,
+        element: <AuthLayout />, 
+        children: [
+          {
+            path: "/login",
+            element: <Login />,
+          },
+          {
+            path: "/register",
+            element: <Register />,
+          },
+        ],
       },
     ],
   },

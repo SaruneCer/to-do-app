@@ -1,6 +1,5 @@
-import Topbar from "./components/Topbar";
 import { Outlet } from "react-router-dom";
-import Footer from "./components/Footer";
+import Footer from "./components/layout/Footer";
 import { UserProvider } from "./context/UserContext";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
@@ -11,7 +10,6 @@ function App() {
     <div>
       <QueryClientProvider client={queryClient}>
         <UserProvider>
-          <Topbar />
           <Outlet />
           <Footer />
         </UserProvider>
