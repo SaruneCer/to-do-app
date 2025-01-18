@@ -3,7 +3,8 @@ import bcrypt from 'bcryptjs';
 
 interface IUser extends Document {
   _id: Types.ObjectId;
-  name: string;
+  firstname: string;
+  lastname: string;
   email: string;
   password: string;
   isCorrectPassword(password: string): Promise<boolean>;
@@ -11,7 +12,8 @@ interface IUser extends Document {
 
 const userSchema = new mongoose.Schema<IUser>(
   {
-    name: { type: String, required: true },
+    firstname: { type: String, required: true },
+    lastname: { type: String, required: true },
     email: {
       type: String,
       required: true,
