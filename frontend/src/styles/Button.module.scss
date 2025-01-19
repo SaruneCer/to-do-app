@@ -1,10 +1,28 @@
 .button {
-    padding: 10px;
-    font-size: 16px;
-    background-color: rgb(176, 172, 172);
-  }
-  
-  .rounded {
-    border-radius: 50px;
-  }
-  
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgb(176, 172, 172); /* Default background */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.small {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.large {
+  padding: 15px 25px;
+  font-size: 20px;
+}
+
+.confirm {
+  background-color: #4caf50;
+  color: white;
+}
+
+.cancel {
+  background-color: #f44336;
+  color: white;
+}
