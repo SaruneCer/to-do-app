@@ -1,7 +1,6 @@
 import styles from "../../styles/Button.module.scss";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  rounded?: boolean;
   small?: boolean;
   large?: boolean;
   confirm?: boolean;  

@@ -21,10 +21,10 @@ const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
       <div className={styles.modal}>
         <h4>{message}</h4>
         <div className={styles.buttons}>
-          <Button onClick={onConfirm} small confirm>
+          <Button onClick={onConfirm} confirm>
             Confirm
           </Button>
-          <Button onClick={onCancel} small cancel>
+          <Button onClick={onCancel} cancel>
             Cancel
           </Button>
         </div>
