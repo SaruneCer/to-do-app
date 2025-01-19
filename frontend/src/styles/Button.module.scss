@@ -1,20 +1,20 @@
 .button {
   padding: 10px;
   font-size: 16px;
-  background-color: rgb(176, 172, 172); /* Default background */
+  background-color: #ff6b6b;
   border: none;
   border-radius: 5px;
+  color: white;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .small {
-  padding: 5px 10px;
-  font-size: 12px;
+  width: 20%;
 }
 
-.large {
-  padding: 15px 25px;
-  font-size: 20px;
+.button:hover {
+  background-color: #ff4b4b;
+  transform: scale(1.05);
 }
 
 .confirm {
@@ -22,7 +22,15 @@
   color: white;
 }
 
+.confirm:hover {
+  background-color: #45a049;
+}
+
 .cancel {
   background-color: #f44336;
   color: white;
+}
+
+.cancel:hover {
+  background-color: #e53935;
 }
