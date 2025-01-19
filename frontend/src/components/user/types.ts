@@ -16,5 +16,6 @@ export interface LoginResponse {
 }
 
 export interface RegisterRequest extends LoginRequest {
-  name: string;
+  firstname: string;
+  lastname: string;
 }

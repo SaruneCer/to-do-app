@@ -3,7 +3,7 @@ import React from "react";
 const Footer: React.FC = () => {
   return (
     <footer>
-      <p>Copyright © Home Service 2024. All rights reserved.</p>
+      <p>Copyright © To Do Task Manager 2025. All rights reserved.</p>
     </footer>
   );
 };

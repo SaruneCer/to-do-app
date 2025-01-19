@@ -3,8 +3,7 @@ import styles from "../../styles/SearchInput.module.scss";
 import { IoCloseOutline } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 
-interface SearchInputProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {}
+type SearchInputProps = React.InputHTMLAttributes<HTMLInputElement>;
 
 const SearchInput = ({ ...props }: SearchInputProps) => {
   const [searchQuery, setSearchQuery] = useState<string>("");
