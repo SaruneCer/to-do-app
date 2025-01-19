@@ -1,0 +1,15 @@
+@use "./authLayout.module.scss" as shared;
+
+.login_link_wrapper {
+  text-align: center;
+  margin-top: 20px;
+
+  .login_link {
+    color: #007bff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

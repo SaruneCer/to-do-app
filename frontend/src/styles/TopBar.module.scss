@@ -10,14 +10,14 @@
 .leftSideWrapper {
   display: flex;
   align-items: center;
+
+  img {
+    max-height: 40px; 
+  }
 }
 
 .centerWrapper {
   flex: 1;
   display: flex;
   justify-content: center;
-}
-
-img {
-  max-height: 40px;
 }

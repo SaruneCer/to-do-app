@@ -1,0 +1,15 @@
+@use "./authLayout.module.scss" as shared;
+
+.signup_link_wrapper {
+  text-align: center;
+  margin-top: 20px;
+
+  .signup_link {
+    color: #007bff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

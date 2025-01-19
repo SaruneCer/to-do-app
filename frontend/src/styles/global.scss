@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", serif;
+  font-style: normal;
 }
 
 html {
@@ -14,4 +18,20 @@ body {
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+main {
+  flex: 1; 
+}
+
+footer {
+  font-size: 12px;
+  text-align: center; 
+  padding: 6px 0; 
+  width: 100%; 
+  position: relative; 
+  bottom: 0;
 }
