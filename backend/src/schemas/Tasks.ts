@@ -4,8 +4,8 @@ interface ITask extends Document {
   _id: Types.ObjectId;
   title: string;
   comment?: string;
-  priority: string;
-  status: 'in progress' | 'finished';
+  priority: 'extreme' | 'moderate' | 'low';
+  status: 'in progress' | 'completed';
   createdBy: Types.ObjectId;
   createdAt: Date;
   updatedAt: Date;
@@ -15,11 +15,16 @@ const taskSchema = new mongoose.Schema<ITask>(
   {
     title: { type: String, required: true },
     comment: { type: String, required: false },
-    priority: { type: String, required: true, default: 'low' },
+    priority: {
+      type: String,
+      required: true,
+      enum: ['extreme', 'moderate', 'low'],
+      default: 'low',
+    },
     status: {
       type: String,
       required: true,
-      enum: ['in progress', 'finished'],
+      enum: ['in progress', 'completed'],
       default: 'in progress',
     },
     createdBy: {
