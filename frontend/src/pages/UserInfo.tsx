@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import { UserContext } from "../context/UserContext";
 import { useEditUser } from "../customHooks/useEditUser";
 import FormikField from "../components/common/FormikField";
-import ConfirmationModal from "../components/common/confirmationModal";
+import ConfirmationModal from "../components/common/ConfirmationModal";
 import Button from "../components/common/Button";
 import styles from "../styles/Userinfo.module.scss";
 import { useNavigate } from "react-router-dom";
