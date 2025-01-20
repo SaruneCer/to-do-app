@@ -1,0 +1,73 @@
+.homePage {
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 40px;
+  
+    header {
+      margin-bottom: 30px;
+  
+      h1 {
+        font-size: 2rem;
+        color: #333;
+        font-weight: normal;
+  
+        span {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  
+    .contentContainer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 365px;
+  
+      section {
+        flex: 1;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+  
+        .taskListHeader {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 15px;
+  
+          div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 16px;
+            color: #999999;
+          }
+  
+          .addTask {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+  
+            .addTaskPlusSpan {
+              color: #ff6b6b;
+              font-size: 20px; 
+              line-height: 1; 
+              vertical-align: middle;
+            }
+  
+            .addTaskLink {
+              font-size: 14px; 
+              line-height: 1.2; 
+  
+              &:hover {
+                color: #ff6b6b;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

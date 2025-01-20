@@ -1,0 +1,84 @@
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modalContent {
+  width: 90%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+}
+
+.fieldWrapper {
+  margin-bottom: 15px;
+
+  label {
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border 0.3s;
+
+    &:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+  }
+
+  .errorMessage {
+    font-size: 12px;
+    color: #ff6b6b;
+    margin-top: 5px;
+  }
+}
+
+.priorityOptions {
+  display: flex;
+  justify-content: space-between;
+
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    input {
+      margin-right: 8px;
+    }
+  }
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+
+  button {
+    margin-left: 10px;
+  }
+}
